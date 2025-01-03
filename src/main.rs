@@ -10,7 +10,6 @@
 // }
 // struct User; unit struct that help to implement only the function that can attech with other thing,
 
-use std::rc::Weak;
 
 // *************************************Enum************************************************* 
 // enum Direction {
@@ -19,21 +18,19 @@ use std::rc::Weak;
 //     East,
 //     West,
 // }
-enum Shape {
-    Circle(f32),
-    Square(f32),
-    Rectangle(f32, f32),
-}
-fn calculate_are(shape:Shape)->f32{
-    match shape{
-        Shape::Circle(radius)=>3.14*radius*radius,
-        Shape::Rectangle(width, length)=> width*length,
-        Shape::Square(side)=>side*side,
-    }
-}
+// enum Shape {
+//     Circle(f32),
+//     Square(f32),
+//     Rectangle(f32, f32),
+// }
+// fn calculate_are(shape:Shape)->f32{
+//     match shape{
+//         Shape::Circle(radius)=>3.14*radius*radius,
+//         Shape::Rectangle(width, length)=> width*length,
+//         Shape::Square(side)=>side*side,
+//     }
+// }
 fn main() {
-    let circle = Shape::Circle(3.2);
-    print!( "{}", calculate_are(circle));
     //*********************************basic types*************************************************************
     // let mut x:i32 = -10;
     // let y:u32=1000;
